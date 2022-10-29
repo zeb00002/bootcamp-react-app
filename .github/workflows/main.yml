@@ -29,10 +29,10 @@ jobs:
       uses: Borales/actions-yarn@v2.1.0
       with:
         # Yarn command
-        cmd: sudo npm install --unsafe-perm=true --allow-root
-    
+        cmd: install
+    sudo 
     - name: Creating build
-      run: yarn build
+      run: npm yarn build --unsafe-perm=true --allow-root
     
     - name: installing surge  
       run: npm install -g surge
