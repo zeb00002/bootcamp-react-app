@@ -32,7 +32,7 @@ jobs:
         cmd: install
      
     - name: Creating build
-      run: npm build --unsafe-perm=true --allow-root
+      run: nnpm run build # run the "build" package script
     
     - name: installing surge  
       run: npm install -g surge
