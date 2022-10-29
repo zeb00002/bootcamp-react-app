@@ -32,7 +32,7 @@ jobs:
         cmd: install
      
     - name: Creating build
-      run: npm yarn build --unsafe-perm=true --allow-root
+      run: npm build --unsafe-perm=true --allow-root
     
     - name: installing surge  
       run: npm install -g surge
